@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    </head>
+<body>
+
+<table id="tblAttFiles" cellspacing=0 border=0  style="font-size:11px;margin-top:0px;border-top:0px solid;">
+    <tr>
+        <td class="rows">
+            메세지 수신 대기중 
+        </td>
+    </tr>
+</table>
+</body>
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+	
+	$("#AddFile").bind('click',function(){
+			var objTbl	= document.all["tblAttFiles"];
+			var objRow = objTbl.insertRow();
+			var objCell	= objRow.insertCell();
+			objCell.innerHTML = "메세지 수신 대기중";
+	});
+
+    
+});
+
+function insertRow(msg)
+    {
+        var objTbl	= document.all["tblAttFiles"];
+        var objRow = objTbl.insertRow();
+        var objCell	= objRow.insertCell();
+        objCell.innerHTML = msg;
+    }
+</script>
+
+
+<iframe src="subscribe.php" width="500" height="100"></iframe>

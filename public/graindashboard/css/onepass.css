@@ -1,0 +1,102 @@
+body {
+    font-family: Lucida Sans, Lucida Sans Unicode, Arial, Sans-Serif;
+    font-size: 13px;
+    margin: 0 auto;
+}
+#tabs {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    height: 35px;
+    width: 200%;
+}
+#tabs span{
+    opacity: 1;
+}
+#tabs li {
+    float: left;
+    display: block;
+    padding: 3px 15px 0 15px;
+    background-color: #fff;
+    margin-right: 10px;
+    font-size: 18px;
+    height: 35px;
+    
+}
+#tabs li a {
+    color: #000;
+    text-decoration: none;
+}
+#tabs li.current {
+    background-color: #f1f1f1;
+    color : #000;
+}
+#tabs li.current a {
+    color: #000;
+    text-decoration: none;
+}
+#tabs li a.remove {
+    color: #f00;
+    margin-left: 10px;
+}
+#content-wrap {
+    background-color: #e1e1e1;
+}
+#main {
+    width: 900px;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: #F6F6F6;
+    margin-top: 20px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    padding: 30px;
+}
+#doclist,#wrapper {
+    float: left;
+    margin: 0 20px 0 0;
+}
+#doclist {
+    width: 150px;
+    border-right: solid 1px #dcdcdc;
+}
+#doclist ul {
+    margin: 0;
+    list-style: none;
+}
+#doclist li {
+    margin: 10px 0;
+    padding: 0;
+}
+#wrapper {
+    width: 700px;
+    margin-top: 20px;
+}
+.header {
+    background-color: #fff;
+}
+.header-tab {
+    overflow: hidden;
+    height: 35px;
+    width: 95%;
+}
+.moreTab{
+    animation-duration: 300ms; 
+    box-shadow: 0 0.25rem 1.5rem 0 rgb(0 0 0 / 10%); 
+    position: absolute; 
+    right: 18px;
+}
+.moretabInvoker{
+    position: absolute; 
+    float: right; 
+    right: 2rem; 
+    top: 3.3rem; 
+    font-size: 22px; 
+    color: #000; 
+    cursor: pointer;
+}
+.dash_gonggi_title{
+    margin-left:5px;
+    font-size:12px;
+    margin-top: 2px;
+}
